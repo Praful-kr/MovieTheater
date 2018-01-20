@@ -1,0 +1,69 @@
+<html>
+<head>
+<meta charset="utf-8">
+	<title>MovieTheater: Hub for movie lovers</title>
+	<meta name="author" content="Praful"/>
+    <meta name="description" content="Movie synopsis and downloads" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- add in a style sheet -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+	<body>
+		<div class="wrapper">
+       	 <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+      	        <!-- to open in new page use target="_blank" -->
+                <li><a href="latest.html">Latest Movies</a></li>
+				<li><a href="celeb.html">Celebrity of the month</a></li>
+				<li>
+					<select name="genre" id="genre"> 
+						<option value="nothing" selected="selected">Genre:</option>
+						<option value="drama.html">Drama</option> 
+						<option value="fantasy.html">Fantasy</option> 
+						<option value="adventure.html">Adventure</option> 
+						<option value="comedy.html">Comedy</option>
+						<option value="thrill.html">thrill</option>
+						<option value="scifi.html">Sci-fi</option>
+					</select>
+				</li>	
+			 </ul>
+        </nav>
+			<script type="text/javascript">
+			var urlMenu = document.getElementById('genre');
+				urlMenu.onchange = function(){
+					var usrOption = this.options[this.selectedIndex];
+					if(usrOption.value != "nothing"){
+						window.open(usrOption.value,"Genre","") ;
+					}
+				}
+			</script>
+       	<div id="header">
+            <img src="/home/praful/Desktop/movie theater/logo.png" />
+		</div>
+        <div id="content">
+            <h2>Hub for the movie lovers...</h2>
+			<div id="image">
+           <h1 style="color:aquamarine">Toilet</h1>
+			<p><h3><img src="toilet.jpg">A VISIT TO THIS TOILET IS A MUST<br>
+
+STORY: Go-getter Keshav (Akshay) serenades liberal-thinker Jaya (Bhumi), a woman from his neighbouring village in Uttar Pradesh. They marry but it doesn’t strike Keshav to tell her that his house doesn’t have a toilet. This then becomes the grounds for Jaya to file for a divorce.<br>
+
+REVIEW: For most of us who take the toilets in our homes for granted, the burning issue of 58% Indians practising open defecation could be a flush-worthy concept. But, director Shree Narayan Singh holds up a mirror to society, showing us how our superstitious villagers, lazy administration and corrupt politicians have actually converted India into the world’s largest shit-pond. Women especially, are treated more insensitively than cattle!<br>
+
+This film is a satirical take on the age-old ‘tradition’ of seeking fields to relieve ourselves. Mercifully it steers clear of being a documentary on sanitisation. Instead TEPK is a robust love-story striking a balance between entertaining and educating. Writer-duo Siddharth-Garima take us through this eye-opening journey of how we need to build toilets for our women (if not a Taj Mahal) through dramatic conflicts between the lead couple — Keshav and Jaya, followed by those between Panditji (Sudhir Pandey) and his older son. The easygoing equation between two brothers, Naru (Divyendu) and Keshav is also delightful. Not to forget the protagonist’s war against his entire village for a latrine. Every characteristic of rustic UP life is captured through the ubiquitous sarpanch and the naughty Kaka (Anupam Kher). The second-half borrows the template for films that address causes and allows for some lecturebaazi. A 10-minute snip here would’ve helped the focus stay sharper.<br>
+
+Akshay is the backbone of this satire. His inner journey as an actor pays dividends and he delivers yet another topnotch performance. Half a star in the rating is rightfully his. Bhumi is perfect in her rendition of the feisty Jaya and Divyendu is a terrific comic. The presence of veterans, Pandey and Kher, is unmissable. The screenplay is peppered with loads of LOL moments balanced correctly with emotional outbursts. As bonus, you get a hummable soundtrack with Hans Mat Pagli, Bakheda and Gori Tu Lath Maar.<br>
+
+So whether you have pressing matters to attend to or not, please take a detour to this toilet. Each of us needs to raise a stink about what our countrymen do in the open.<br> 
+<br>
+</h3></p><br><br>
+						<center><h1><a href="https://www.youtube.com/watch?v=ym4EJQ7XORk">Watch the trailer here</a></h1></center>
+        	</div>
+		</div>
+    	<footer>
+            Site designed by <a href="http://www.google.com" target="_blank">MovieTheater</a> copyright 2018
+        </footer>
+		</div>
+	</body>
+</html>

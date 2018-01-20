@@ -1,0 +1,69 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>MovieTheater: Hub for movie lovers</title>
+	<meta name="author" content="Praful" />
+	<meta name="description" content="Movie synopsis and downloads" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- add in a style sheet -->
+	<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<!-- to open in new page use target="_blank" -->
+				<li><a href="latest.html">Latest Movies</a></li>
+				<li><a href="celeb.html">Celebrity of the month</a></li>
+				<li>
+					<select name="genre" id="genre"> 
+						<option value="nothing" selected="selected">Genre:</option>
+						<option value="drama.html">Drama</option> 
+						<option value="fantasy.html">Fantasy</option> 
+						<option value="adventure.html">Adventure</option> 
+						<option value="comedy.html">Comedy</option>
+						<option value="thrill.html">thrill</option>
+						<option value="scifi.html">Sci-fi</option>
+					</select>
+				</li>
+			</ul>
+		</nav>
+		<script type="text/javascript">
+			var urlMenu = document.getElementById('genre');
+			urlMenu.onchange = function() {
+				var usrOption = this.options[this.selectedIndex];
+				if (usrOption.value != "nothing") {
+					window.open(usrOption.value, "Genre", "");
+				}
+			}
+		</script>
+		<div id="header">
+			<img src="/home/praful/Desktop/movie theater/logo.png" />
+		</div>
+		<div id="content">
+			<h2>Drama</h2>
+			<div id="imageList">
+				<div class="row">
+					<div class="column">
+						<a href="newton.html"><img src="newton.png" style="width:100%"></a><p><h3 style="padding-left: 250px"><a href="newton.html">Newton</a></h3></p>
+					<a href="secret_superstar.html"><img src="secret_superstar.jpg" style="width:100%"></a><p><h3 style="padding-left: 210px"><a href=secret_superstar.html>Secret Superstar</a></h3></p>
+					</div>
+					<div class="column">
+						<a href="bahubali.html"><img src="bahubali.jpg" style="width:100%"></a><p><h3 style="padding-left: 250px"><a href="bahubali.html">Baahubali 2: The Conclusion</a></h3></p>
+			<a href="toilet.html"><img src="toilet.jpg"style="width:100%"></a><h3 style="padding-left: 250px"><a href="toilet.html"><p>Toilet:Ek prem katha</p></a></h3>
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+		<footer>
+			Site designed by <a href="http://www.google.com" target="_blank">MovieTheater</a> copyright 2018
+		</footer>
+	</div>
+</body>
+
+</html>

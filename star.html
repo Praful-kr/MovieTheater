@@ -1,0 +1,65 @@
+<html>
+<head>
+<meta charset="utf-8">
+	<title>MovieTheater: Hub for movie lovers</title>
+	<meta name="author" content="Praful"/>
+    <meta name="description" content="Movie synopsis and downloads" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- add in a style sheet -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+	<body>
+		<div class="wrapper">
+       	 <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+      	        <!-- to open in new page use target="_blank" -->
+                <li><a href="latest.html">Latest Movies</a></li>
+				<li><a href="celeb.html">Celebrity of the month</a></li>
+				<li>
+					<select name="genre" id="genre"> 
+						<option value="nothing" selected="selected">Genre:</option>
+						<option value="drama.html">Drama</option> 
+						<option value="fantasy.html">Fantasy</option> 
+						<option value="adventure.html">Adventure</option> 
+						<option value="comedy.html">Comedy</option>
+						<option value="thrill.html">thrill</option>
+						<option value="scifi.html">Sci-fi</option>
+					</select>
+				</li>	
+			 </ul>
+        </nav>
+			<script type="text/javascript">
+			var urlMenu = document.getElementById('genre');
+				urlMenu.onchange = function(){
+					var usrOption = this.options[this.selectedIndex];
+					if(usrOption.value != "nothing"){
+						window.open(usrOption.value,"Genre","") ;
+					}
+				}
+			</script>
+       	<div id="header">
+            <img src="/home/praful/Desktop/movie theater/logo.png" />
+		</div>
+        <div id="content">
+            <h2>Hub for the movie lovers...</h2>
+			<div id="image">
+           <h1 style="color:aquamarine">STAR WARS: THE LAST JEDI STORY:</h1>
+			<p><h3><img src="star.jpg">STAR WARS: THE LAST JEDI STORY: The eighth chapter of the Star Wars saga continues as new heroes join galactic legends in an epic adventure that unlocks age-old mysteries of the Force.<br>
+
+STAR WARS: THE LAST JEDI REVIEW: With quite the literal cliffhanger at the end of 'The Force Awakens', fans were left with a lot of questions. Where has Luke Skywalker (Mark Hamill) been, and what was he up to for all these years? Who is Rey (Daisy Ridley) and how is she so strong with the Force? What's the deal with Supreme Leader Snoke (Andy Serkis)? Why did Kylo Ren (Adam Driver) turn over to the dark side? Clearly, writer & director Rian Johnson knows these questions are on every fan's mind. But true to what Luke Skywalker says in the trailer, he does not address them the way you think. There are a lot of narrative risks taken by Johnson in 'The Last Jedi' and they propel the mythology in an unexpected direction.<br>
+
+Even with it's two and a half hour runtime, there's not much fluff in 'The Last Jedi'. All the drama, action and adventure build towards something much bigger. There's hardly a bad performance in this film, but Mark Hamill is outstanding as Luke. Now a cranky old man, Luke's history with the Force, and Jedi have taken a toll on him and Hamill captures this essence with a pain that's tangible. The interactions between Luke and Rey are certainly gripping, but even more intriguing are the scenes between her and Kylo Ren (Adam Driver). Meanwhile, the other characters - General Leia (Carrie Fisher), Poe Dameron (Oscar Isaac), and Finn (John Boyega), all add vital aspects to the story. Johnson even introduces a few new ones with Benicio Del Toro being memorable, and Laura Dern as Vice Admiral Holdo does not disappoint. The only misstep is Rose Tico (Kelly Marie Tran) and her equation with Finn that feels somewhat disconnected from the others.<br>
+
+All the technical components come together seamlessly as well. The score, editing, effects, sound design, and cinematography are well-balanced and high caliber. With some absolutely gorgeous moments that will become imprinted in every fan's mind, 'The Last Jedi' is everything a Star Wars film should be, and so much more. Johnson weaves an emotionally rewarding tale while balancing all the essential sci-fi action expected, but manages to give 'The Last Jedi' its own heart and voice.<br>
+<br>
+</h3></p><br><br>
+					<center><h1><a href="https://www.youtube.com/watch?v=Q0CbN8sfihYr">Watch the trailer here</a></h1></center>
+        	</div>
+		</div>
+    	<footer>
+            Site designed by <a href="http://www.google.com" target="_blank">MovieTheater</a> copyright 2018
+        </footer>
+		</div>
+	</body>
+</html>
